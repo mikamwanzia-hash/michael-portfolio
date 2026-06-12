@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif,Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+.documentation_container{
+    background: #fff;
+    min-width: 80%;
+    height: auto;
+    margin: 100px 10%;
+    border-radius: 8px;
+    justify-content: center;
+    overflow-y: scroll;
+    padding: 5% 5%;
+    box-shadow: 1px 1px  5px #000;
+    overflow-x: hidden;
+  
+
+
+}
+.flex_header{
+    background:transparent;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-decoration: underline;
+    margin: 2% 0;
+   
+    
+    
+}
+.flex_header h1{
+     font-size: 1.2rem;
+}
+.documentation{
+    margin: 4% 0;
+}
+.documentation span{
+    color: rgb(221, 26, 221);
+}
+.documentation h1,h2{
+    margin: 2%;
+    font-size: 1.114rem;
+}
+
+.note{
+    color: red;
+   
+}
+.button{  
+    background: transparent;
+    margin: 2%;
+    text-align: center;
+    
+}

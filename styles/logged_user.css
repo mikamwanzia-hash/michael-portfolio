@@ -1,0 +1,52 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 1000;
+    
+}
+.logo { font-size: 1.2rem; font-weight: 700; text-shadow:2px 2px #000;}
+.nav { display: flex; align-items: center; gap: 18px; }
+.nav a { color: #e5e7eb; text-decoration: none; font-size: 1.2rem; transition:0.3s; }
+.nav a:hover { color:#38bdf8; }
+.logout-btn {
+    background: linear-gradient(130deg,#911111,#ff9776);
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+
+}
+
+.logout-btn:hover {
+    background: linear-gradient(130deg,#c00a0a,#ff9776);
+}
+/* Mobile Menu */
+.menu-toggle {
+     display:none; 
+     font-size:1.9rem; 
+     cursor:pointer;
+      position: fixed;
+      right: 2%;
+     }
+
+@media(max-width:900px){
+.nav { position:fixed; top:0; right:-100%; width:100%; background:#020617; flex-direction:column; padding:20px; transition:0.3s; }
+.nav.show { right:0; }
+.menu-toggle { display:block; }
+}
+.btn{padding:5px 10px;background:#ff6600;color:#fff;border:none;cursor:pointer;border-radius: 6px;transition: .5s;}
+.btn:hover{
+    background:#e96a16 ;
+    transform: translateY(-2px);
+}

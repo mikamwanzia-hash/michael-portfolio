@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    margin: 120px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    text-align: center;
+}
+
+
+
+/* ================= DARK MODE ================= */
+body.dark { background:#020617; color:#e5e7eb; }
+body.dark .header, body.dark .footer { background:#020617; }
+body.dark .nav a { color:#cbd5f5; }
+body.dark .nav a:hover { color:#38bdf8; }
+body.dark .profile-card, body.dark .service-card, body.dark .modal-content { background:#020617; color:#e5e7eb; box-shadow:0 8px 20px rgba(0,0,0,0.7); }
+body.dark .service-content p, body.dark .profile-card p { color:#cbd5f5; }
+body.dark .btn { background:#38bdf8; color:#020617; }
+body.dark .outline { border-color:#38bdf8; color:#38bdf8; }
+body.dark input  { background:#020617; border:1px solid #334155; color:#e5e7eb; }
+body.dark .contact-card h2,p  {  color:#28292c; }
+body.dark strong { color:#e5e7eb; }
+body.dark .modal { background:rgba(0,0,0,0.8); }
+body.dark footer p  {  color:#e5e7eb; }
+body.service-content h4  {color: #fff; }
+body.dark services-title h2{color: #fff;}
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-card h2 {
+    margin-bottom: 10px;
+}
+
+.contact-card span {
+    color: #f4b400;
+    font-weight: 600;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+}
+
+.message-feedback {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: green;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+form button {
+    background:linear-gradient(145deg,#f4b400, #8cdf21);
+    border: none;
+    padding: 14px;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 3% 25%;
+    transition: .5s;
+    color: #fff;
+    font-family: serif,Arial, Helvetica, sans-serif;
+}
+
+form button:hover {
+    background:linear-gradient(145deg,#8cdf21,#f4b400);
+    transform: translateY(-5px);
+}
+
+.map-section {
+    margin-top: 40px;
+}
+
+.map-section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 320px;
+    border: 0;
+    border-radius: 14px;
+}
+

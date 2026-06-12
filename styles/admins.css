@@ -1,0 +1,326 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  serif,Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background: #f5f7fb;
+    color: #333;
+    margin: 100px 0;   /* header */
+    padding-bottom: 70px; /* footer */
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #38bdf8;
+}
+
+.logout-btn {
+    background: linear-gradient(130deg,#911111,#ff9776);
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(130deg,#c00a0a,#ff9776);
+}
+
+/* ===== MOBILE MENU ===== */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-family: cursive,serif,Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    
+}
+
+/* ================= FORMS ================= */
+form input, form select, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 2% 10%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #0a2540;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #163b63;
+}
+
+.message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+/* ================= TABLES ================= */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+img.food-img, img.user-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+button.btn-action {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(110deg,#441a2e,#ff9776);
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button.btn-action:hover {
+    background: linear-gradient(110deg,#ff9776,#441a2e);
+}
+
+/* ================= MODALS ================= */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90%;
+    overflow-y: auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.close-btn {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e63946;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #0a2540;
+}
+
+.modal table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.modal th, .modal td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.modal th {
+    background: #0a2540;
+    color: #fff;
+}
+
+.modal tr:nth-child(even) {
+    background: #f4f6f8;
+}
+
+.modal tr.total-row {
+    font-weight: bold;
+    background: #cfcfcf;
+}
+
+/* ===== REPLY FORM ===== */
+#replyForm input[type=text], #replyForm textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 3% 5%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+#replyForm button {
+    width: 50%;
+    padding: 12px;
+    background: #0a2540;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 4% 25%;
+}
+
+#replyForm button:hover {
+    background: #163b63;
+}
+
+#replyFeedback {
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ================= FORM & TABLE CONTAINER ================= */
+form, table {
+    background-color: #fff;
+    width: 98%;
+    margin: 5% 1%;
+    box-shadow: 1px 1px 3px #333;
+    border-radius: 8px;
+}
+
+/* ================= MODAL POSITIONS ================= */
+.modal-top { justify-content: center; align-items: flex-start; }
+.modal-bottom { justify-content: center; align-items: flex-end; }
+.modal-left { justify-content: flex-start; align-items: center; }
+.modal-right { justify-content: flex-end; align-items: center; }
+.modal-center { justify-content: center; align-items: center; }
+
+/* ================= MODAL SLIDE ANIMATIONS ================= */
+.modal-top .modal-content { transform: translateY(-50px); opacity: 0; }
+.modal-bottom .modal-content { transform: translateY(50px); opacity: 0; }
+.modal-left .modal-content { transform: translateX(-50px); opacity: 0; }
+.modal-right .modal-content { transform: translateX(50px); opacity: 0; }
+.modal-center .modal-content { transform: translateY(0); opacity: 0; }
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 900px) {
+    .nav {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        background: #020617;
+        flex-direction: column;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .nav.show {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+form button {
+    margin: 3% 0;
+    transition: 0.5s;
+}
+#food-item{
+    background:#fff;
+    padding: 5% ;
+
+}
+
+
+/* ================= DARK MODE ================= */
+body.dark { background: #020617; color: #e5e7eb; }
+body.dark .nav a { color: #cbd5f5; }
+body.dark .nav a:hover { color: #38bdf8; }
+body.dark .modal-content { background: #020617; color: #e5e7eb; box-shadow: 0 8px 20px rgba(0,0,0,0.7); }
+body.dark .btn { background: #38bdf8; color: #020617; }
+body.dark .outline { border-color: #38bdf8; color: #38bdf8; }
+body.dark input, body.dark textarea { background: #fff; border: 1px solid #334155; color: #333; }
+body.dark a { color: #2651dc; }
+body.dark .table a:hover { color: #dc2626; }
+body.dark .modal { background: rgba(0,0,0,0.8); }
+body.dark table { color: #333; }
+body.dark .container h2 { color: #fff; }

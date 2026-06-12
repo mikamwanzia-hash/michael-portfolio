@@ -1,0 +1,162 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    height: 100vw;
+    flex-direction: column;
+    display: flex;
+    background:transparent;
+
+}
+/* Footer main */
+footer{
+background: #0f172a;
+width: 100%;
+height: auto;
+position: sticky;
+bottom: 0;
+
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding: auto ;
+
+
+  
+}
+.quick_access a,li{
+     list-style: none;
+     text-decoration: none;
+     color: #fff;
+
+}
+
+/* copyright */
+.footer_bottom{
+    margin: 1% 0;
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* floating icons container */
+.footer_float_icons{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: transparent;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+footer h3{
+    text-decoration: underline;
+    font-family: cursive,Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 2%;
+}
+footer p{
+    color: #fff;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    gap: 2%;
+     width: 20%;
+     justify-content: center;
+     align-items: center;
+}
+/* icons style */
+.footer_float_icons a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px #0f172a;}
+.quick_access{
+     
+    background: transparent;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact-infor{
+     background: transparent;
+    width:30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+/* phone button */
+.phone-float{
+    background: #007bff;
+   
+}
+
+/* whatsapp button */
+.whatsapp-float{
+    background: #25D366;
+}
+
+/* hover effect */
+.footer_float_icons a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* animations */
+.animate-ring{
+    animation: ring 2s infinite;
+}
+
+.animate-bounce{
+    animation: bounce 2s infinite;
+}
+
+@keyframes ring{
+    0%{transform: rotate(0);}
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(10deg);}
+    40%{transform: rotate(-10deg);}
+    50%{transform: rotate(0);}
+}
+
+@keyframes bounce{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-6px);}
+}
+
+/* mobile responsive */
+@media(max-width:768px){
+
+footer{
+   
+    gap: 8px;
+
+}
+
+
+}

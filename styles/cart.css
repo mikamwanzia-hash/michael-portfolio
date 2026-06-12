@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    margin: 120px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ================= MAIN ================= */
+.container { max-width:1200px; margin:auto; padding:10%; justify-content: center;text-align: center; background: #fff;border-radius: 8px;box-shadow: 1px 1px 5px #000;}
+.profile-card { background:#fff; border-radius:14px; padding:25px; box-shadow:0 10px 25px rgba(0,0,0,0.08); margin:3% 0;text-align: center; }
+.profile-card h2 { margin-bottom:15px; }
+/* Fade-out success message */
+.success-msg {
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+        display: none;
+    }
+}
+
+/* ================= CART MODAL ================= */
+.modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:2000; }
+.modal-content { background:#fff; width:95%; max-width:600px; border-radius:14px; padding:25px; position:relative; max-height:80vh; overflow-y:auto; }
+.close-btn { position:absolute; top:12px; right:18px; font-size:26px; cursor:pointer; }
+.cart-item { display:flex; align-items:center; gap:12px; margin-bottom:15px; }
+.cart-item img { width:60px; height:50px; object-fit:cover; border-radius:6px; }
+.cart-total { text-align:right; font-weight:700; margin-top:15px; }
+
+
+
+.btn{padding:5px 10px;background:#ff6600;color:#fff;border:none;cursor:pointer;border-radius: 6px;transition: .5s; margin: 2%;}
+.btn:hover{
+    background:#e96a16 ;
+    transform: translateY(-2px);
+}
+
+/* ================= DARK MODE ================= */
+body.dark { background:#020617; color:#e5e7eb; }
+body.dark .header, body.dark .footer { background:#020617; }
+body.dark .container h2,h3 { color:#000; }
+body.dark .cart-item strong{ color:#000;  }
+body.dark .profile-card, body.dark .service-card, body.dark .modal-content { background:#020617; color:#e5e7eb; box-shadow:0 8px 20px rgba(0,0,0,0.7); }
+body.dark .service-content p, body.dark .profile-card p { color:#cbd5f5; }
+body.dark .btn { background:#ff6600; color:#fff; }

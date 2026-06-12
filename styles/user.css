@@ -1,0 +1,133 @@
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    color: #333;
+    padding-top: 80px;   /* header */
+    padding-bottom: 70px; /* footer */
+    margin: 100px 0;
+    overflow-x: hidden;
+    justify-content: center;
+    overflow-y: scroll;
+    
+}
+.container h2{
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+
+/* ================= MAIN ================= */
+.container { max-width:1200px; margin:auto; padding:20px; justify-content: center;text-align: center; }
+.profile-card { background:#fff; border-radius:14px; padding:25px; box-shadow:0 10px 25px rgba(0,0,0,0.08); margin:3% 0;text-align: center; }
+.profile-card h2 { margin-bottom:15px; }
+/* Fade-out success message */
+.success-msg {
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+        display: none;
+    }
+}
+
+
+/* ================= FOOD GRID ================= */
+.section-title { margin-bottom:25px; text-align:center; font-size:24px; font-weight:600; }
+.services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:25px; }
+.service-card { background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:transform .3s; }
+.service-card:hover { transform:translateY(-6px); }
+.service-card img { width:100%; height:180px; object-fit:cover; }
+.service-content { padding:18px; }
+.service-content h4 { margin-bottom:8px; }
+.service-content p { font-size:14px; color:#666; margin-bottom:10px; }
+.service-content strong { display:block; margin-bottom:12px; color:#0f172a; }
+
+
+.flex_header {
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 420px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 14px;
+}
+
+.flex_header h1 {
+    font-size: 2.5rem;
+}
+
+.welcome-text {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.welcome-text span {
+    color: #f7b733;
+}
+
+.welcome-subtext {
+    margin-top: 10px;
+    min-height: 24px;
+    font-size: 0.95rem;
+}
+
+.btn{padding:5px 10px;background:#ff6600;color:#fff;border:none;cursor:pointer;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px;}
+.service-card{border:1px solid #ccc;padding:10px;border-radius:5px;text-align:center;}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);justify-content:center;align-items:center;}
+.modal-content{background:#fff;padding:20px;width:90%;max-width:500px;border-radius:5px;position:relative;}
+.close-btn{position:absolute;top:10px;right:10px;cursor:pointer;}
+.success-msg{background:green;color:#fff;padding:5px 10px;border-radius:3px;margin-bottom:10px;}
+
+
+/* BACKGROUND SLIDESHOW */
+.bg-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.bg-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1.5s ease-in-out, transform 8s ease;
+}
+
+.bg-slideshow img.active {
+    opacity: 1;
+    transform: scale(1);
+}
+#latest-foods h2{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+ 
+}
+
+
+/* ================= DARK MODE ================= */
+body.dark { background:#020617; color:#e5e7eb; }
+body.dark .header, body.dark .footer { background:#020617; }
+body.dark .nav a { color:#cbd5f5; }
+body.dark .nav a:hover { color:#38bdf8; }
+body.dark .profile-card, body.dark .service-card, body.dark .modal-content { background:#020617; color:#e5e7eb; box-shadow:0 8px 20px rgba(0,0,0,0.7); }
+body.dark .service-content p, body.dark .profile-card p { color:#cbd5f5; }
+body.dark .btn { background:#38bdf8; color:#020617; }
+body.dark .outline { border-color:#38bdf8; color:#38bdf8; }
+body.dark input  { background:#020617; border:1px solid #334155; color:#e5e7eb; }
+body.dark strong { color:#e5e7eb; }
+body.dark .modal { background:rgba(0,0,0,0.8); }
